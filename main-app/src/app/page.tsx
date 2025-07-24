@@ -18,10 +18,10 @@ export default function Home() {
               <Link href="/" className="text-blue-600 hover:text-blue-800">
                 Home
               </Link>
-              <Link href="/micro1" className="text-blue-600 hover:text-blue-800">
+              <Link href="/routes/micro-ui-navigation" className="text-blue-600 hover:text-blue-800">
                 Micro 1
               </Link>
-              <Link href="/micro2" className="text-blue-600 hover:text-blue-800">
+              <Link href="/routes/micro-ui-content" className="text-blue-600 hover:text-blue-800">
                 Micro 2
               </Link>
             </nav>
