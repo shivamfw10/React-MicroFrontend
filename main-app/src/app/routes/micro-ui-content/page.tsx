@@ -1,5 +1,6 @@
 'use client';
 
+import { ROUTES } from '@/app/constants/routes';
 import { RemoteComponent } from '@/component/RemoteComponent';
 import Link from 'next/link';
 
@@ -13,13 +14,13 @@ export default function Micro2Page() {
               ⚡ Micro Frontend 2
             </h1>
             <nav className="space-x-4">
-              <Link href="/" className="text-blue-600 hover:text-blue-800">
+              <Link href={ROUTES.HOME} className="text-blue-600 hover:text-blue-800">
                 Home
               </Link>
-              <Link href="/routes/micro-ui-navigation" className="text-blue-600 hover:text-blue-800">
+              <Link href={ROUTES.MICRO_UI_NAVIGATION} className="text-blue-600 hover:text-blue-800">
                 Micro 1
               </Link>
-              <Link href="/routes/-content" className="text-blue-600 hover:text-blue-800 font-semibold">
+              <Link href={ROUTES.MICRO_UI_CONTENT} className="text-blue-600 hover:text-blue-800 font-semibold">
                 Micro 2
               </Link>
             </nav>

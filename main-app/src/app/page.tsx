@@ -2,6 +2,7 @@
 
 import { RemoteComponent } from '@/component/RemoteComponent';
 import Link from 'next/link';
+import { ROUTES } from './constants/routes';
 
 
 export default function Home() {
@@ -15,13 +16,13 @@ export default function Home() {
               🏗️ Micro Frontend Architecture Demo
             </h1>
             <nav className="space-x-4">
-              <Link href="/" className="text-blue-600 hover:text-blue-800">
+              <Link href={ROUTES.HOME} className="text-blue-600 hover:text-blue-800">
                 Home
               </Link>
-              <Link href="/routes/micro-ui-navigation" className="text-blue-600 hover:text-blue-800">
+              <Link href={ROUTES.MICRO_UI_NAVIGATION} className="text-blue-600 hover:text-blue-800">
                 Micro 1
               </Link>
-              <Link href="/routes/micro-ui-content" className="text-blue-600 hover:text-blue-800">
+              <Link href={ROUTES.MICRO_UI_CONTENT} className="text-blue-600 hover:text-blue-800">
                 Micro 2
               </Link>
             </nav>
