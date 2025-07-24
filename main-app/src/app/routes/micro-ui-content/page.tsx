@@ -1,5 +1,6 @@
 'use client';
 
+import { MICRO_FRONTENDS } from '@/app/constants/micro-frontends';
 import { ROUTES } from '@/app/constants/routes';
 import { RemoteComponent } from '@/component/RemoteComponent';
 import Link from 'next/link';
@@ -40,8 +41,8 @@ export default function Micro2Page() {
 
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <RemoteComponent
-            remoteUrl={ process.env.NEXT_PUBLIC_MICROUI_CONTENT_REMOTE_URL ?? ''}
-            moduleName={process.env.NEXT_PUBLIC_MICROUI_CONTENT_MODULE_NAME??''}
+            remoteUrl={MICRO_FRONTENDS.CONTENT_UI.remoteUrl}
+            moduleName={MICRO_FRONTENDS.CONTENT_UI.module}
           />
         </div>
       </main>
