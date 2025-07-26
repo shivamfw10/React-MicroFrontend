@@ -1,0 +1,45 @@
+.list-accordion-row {
+  all: unset; /* resets all default styles of <button> */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  outline: none;
+  width: 100%; /* full width if needed */
+}
+
+.list-accordion-row[aria-expanded="true"] .accordion-icon {
+  color: #0078d4;
+}
+
+.accordion-icon {
+  font-size: 16px;
+  pointer-events: none;
+  transition: color 0.2s;
+}
+
+.list-accordion-row.no-outline {
+  outline: none !important;
+}
+
+.list-accordion-row:focus {
+  outline: 2px solid #0078d4;
+  outline-offset: 2px;
+}
+
+.list-accordion-list {
+  max-height: 300px; 
+  overflow-y: auto;
+  padding-right: 8px;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.search-highlight {
+  background: #f1c40e;
+  color: #fbf8f8;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 0 2px;
+}
