@@ -57,7 +57,7 @@ export default function Home() {
             <div className="p-0">
               <RemoteComponent
                 remoteUrl={process.env.NEXT_PUBLIC_MICROUI_NAVIGATION_REMOTE_URL??''}
-                moduleName={process.env.NEXT_PUBLIC_MICROUI_NAVIGATION_MODULE_NAME??''}
+                moduleName={process.env.NEXT_PUBLIC_MICROUI_NAVIGATION_SCOPE??''}
               />
             </div>
           </div>
@@ -75,7 +75,7 @@ export default function Home() {
             <div className="p-0">
               <RemoteComponent
                 remoteUrl={process.env.NEXT_PUBLIC_MICROUI_CONTENT_REMOTE_URL??''}
-                moduleName={process.env.NEXT_PUBLIC_MICROUI_CONTENT_MODULE_NAME??''}
+                moduleName={process.env.NEXT_PUBLIC_MICROUI_CONTENT_SCOPE??''}
               />
             </div>
           </div>

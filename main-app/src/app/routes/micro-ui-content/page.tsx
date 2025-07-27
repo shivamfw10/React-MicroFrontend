@@ -42,7 +42,7 @@ export default function Micro2Page() {
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <RemoteComponent
             remoteUrl={MICRO_FRONTENDS.CONTENT_UI.remoteUrl}
-            moduleName={MICRO_FRONTENDS.CONTENT_UI.module}
+            moduleName={MICRO_FRONTENDS.CONTENT_UI.scope}
           />
         </div>
       </main>

@@ -42,7 +42,7 @@ export default function Micro1Page() {
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <RemoteComponent
             remoteUrl={MICRO_FRONTENDS.NAVIGATION_UI.remoteUrl}
-            moduleName={MICRO_FRONTENDS.NAVIGATION_UI.module}
+            moduleName={MICRO_FRONTENDS.NAVIGATION_UI.scope}
           />
         </div>
       </main>
